@@ -1,6 +1,10 @@
 <footer>
   <div class="footer-content">
-    <p>Theme created by <a href="https://www.timeaton.dev">Tim Eaton</a>.</p>
+    <!-- Conditional rendering for the tribute to the original author -->
+    {Astro.url.pathname === '/' && (
+      <p>Theme by <a href="https://www.timeaton.dev">Tim Eaton</a>.</p>
+    )}
+    <p>&copy; 2025 Zheng Shi</p>
   </div>
 </footer>
 
@@ -13,9 +17,23 @@
   }
 
   .footer-content {
+    text-align: center;
     max-width: var(--max-width);
     color: var(--color-text-muted);
     margin: 0 auto;
     padding: 2rem var(--gap);
+  }
+
+  .share-buttons {
+    margin-top: 1rem;
+  }
+
+  .share-buttons a {
+    margin: 0 0.5rem;
+  }
+
+  .share-buttons img {
+    width: 24px;
+    height: 24px;
   }
 </style>

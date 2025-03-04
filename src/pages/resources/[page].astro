@@ -5,37 +5,40 @@ import Breadcrumbs from '@components/Breadcrumbs.astro';
 import Layout from '@layouts/Layout.astro';
 import LinkCard from '@components/LinkCard.astro';
 import Pagination from '@components/Pagination.astro';
+import PostCard from '@components/PostCard.astro';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
-  const allFinds = await getCollection('finds');
+  const allArticles = await getCollection('articles');
+  const allShareables = await getCollection('shareables');
   
-  const finds = allFinds
-    .filter(find => find.data.public)
+  const articles = allArticles
+    .filter(article => article.data.public)
     .sort((a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf());
 
-  const pages = paginate(finds, { pageSize: 40 });
+  const pages = paginate(articles, { pageSize: 40 });
+  
   
   return pages;
 }
 
 const { page } = Astro.props;
-const pageTitle = page.currentPage === 1 ? 'Today I Found...' : `Today I Found... - Page ${page.currentPage}`;
+const pageTitle = page.currentPage === 1 ? 'Resources' : `Resources - Page ${page.currentPage}`;
 ---
 
 <Layout title={pageTitle}>
   <div class="page-content">
-    <Breadcrumbs path={['Found']} />
-    <h1>Today I Found...</h1>
+    <Breadcrumbs path={['Resources']} />
+    <h1>Articles</h1>
     <hr/>
-    
+
     <div class="finds-grid">
-      {page.data.map((find) => (
+      {page.data.map((article) => (
         <LinkCard
-          type={find.data.type}
-          title={find.data.title}
-          description={find.data.description}
-          link={find.data.link}
-          publicationDate={find.data.publicationDate}
+          type={article.data.type}
+          title={article.data.title}
+          description={article.data.description}
+          link={article.data.link}
+          publicationDate={article.data.publicationDate}
         />
       ))}
     </div>
@@ -43,7 +46,7 @@ const pageTitle = page.currentPage === 1 ? 'Today I Found...' : `Today I Found..
     <Pagination
       currentPage={page.currentPage}
       totalPages={page.lastPage}
-      baseUrl="/finds/"
+      baseUrl="/resources/"
     />
   </div>
 </Layout>

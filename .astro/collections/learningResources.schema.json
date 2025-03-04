@@ -1,27 +1,26 @@
 {
-  "$ref": "#/definitions/posts",
+  "$ref": "#/definitions/learningResources",
   "definitions": {
-    "posts": {
+    "learningResources": {
       "type": "object",
       "properties": {
         "title": {
           "type": "string"
         },
-        "slug": {
-          "type": "string"
-        },
-        "author": {
-          "type": "string",
-          "default": "Zheng Shi"
-        },
-        "externalUrl": {
+        "link": {
           "type": "string"
         },
         "description": {
           "type": "string"
         },
-        "category": {
-          "type": "string"
+        "type": {
+          "type": "string",
+          "enum": [
+            "video",
+            "article",
+            "book",
+            "website"
+          ]
         },
         "publicationDate": {
           "anyOf": [
@@ -43,31 +42,15 @@
           "type": "boolean",
           "default": true
         },
-        "editDate": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "date-time"
-            },
-            {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "integer",
-              "format": "unix-time"
-            }
-          ]
-        },
         "$schema": {
           "type": "string"
         }
       },
       "required": [
         "title",
-        "slug",
+        "link",
         "description",
-        "category",
+        "type",
         "publicationDate"
       ],
       "additionalProperties": false

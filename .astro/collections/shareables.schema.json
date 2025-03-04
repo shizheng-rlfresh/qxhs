@@ -1,20 +1,13 @@
 {
-  "$ref": "#/definitions/posts",
+  "$ref": "#/definitions/shareables",
   "definitions": {
-    "posts": {
+    "shareables": {
       "type": "object",
       "properties": {
         "title": {
           "type": "string"
         },
-        "slug": {
-          "type": "string"
-        },
-        "author": {
-          "type": "string",
-          "default": "Zheng Shi"
-        },
-        "externalUrl": {
+        "link": {
           "type": "string"
         },
         "description": {
@@ -43,29 +36,13 @@
           "type": "boolean",
           "default": true
         },
-        "editDate": {
-          "anyOf": [
-            {
-              "type": "string",
-              "format": "date-time"
-            },
-            {
-              "type": "string",
-              "format": "date"
-            },
-            {
-              "type": "integer",
-              "format": "unix-time"
-            }
-          ]
-        },
         "$schema": {
           "type": "string"
         }
       },
       "required": [
         "title",
-        "slug",
+        "link",
         "description",
         "category",
         "publicationDate"

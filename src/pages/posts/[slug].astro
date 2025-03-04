@@ -1,7 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Breadcrumbs from '@components/Breadcrumbs.astro';
-import Layout from '@layouts/Layout.astro';
+import PostSnugLayout from '@layouts/PostSnugLayout.astro';
 import { formatDate } from '../../utils/date';
 import { render } from 'astro:content';
 
@@ -19,7 +19,7 @@ const { Content } = await render(post);
 
 ---
 
-<Layout title={post.data.title} description={post.data.description}>
+<PostSnugLayout title={post.data.title} description={post.data.description}>
   <Breadcrumbs path={['posts', post.data.title]} />
   <article class="page-content">
     <header class="post-header">
@@ -39,7 +39,7 @@ const { Content } = await render(post);
     
     <Content />
   </article>
-</Layout>
+</PostSnugLayout>
 
 <style>
   .post {

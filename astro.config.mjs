@@ -20,8 +20,11 @@ export default defineConfig({
       posts: {
         schema: "src/content/config.ts#posts",
       },
-      finds: {
-        schema: "src/content/config.ts#finds",
+      articles: {
+        schema: "src/content/config.ts#articles",
+      },
+      shareables: {
+        schema: "src/content/config.ts#shareables",
       },
     },
   },

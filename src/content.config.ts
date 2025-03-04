@@ -52,4 +52,17 @@ const shareables = defineCollection({
   }),
 });
 
-export const collections = { posts, articles, shareables };
+// Define Tools & Software Collection
+const educations = defineCollection({
+  loader: glob({ pattern: "*.md", base: "./src/content/resources/educations" }),
+  schema: z.object({
+    title: z.string(),
+    link: z.string(),
+    description: z.string(),
+    type: z.nativeEnum(FoundType),
+    publicationDate: z.coerce.date(),
+    public: z.boolean().default(true),
+  }),
+});
+
+export const collections = { posts, articles, shareables, educations };

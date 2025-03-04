@@ -11,6 +11,15 @@ const posts = (await getCollection('posts', ({ data }) => {
     .sort((a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf())
     .slice(0,5);
 
+
+const educations = (await getCollection('educations', ({ data }) => {
+    return data.public !== false;
+}))
+    .sort((a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf())
+    .slice(0,5);
+
+console.log(educations);
+
 ---
 
 <Layout title="Home">
@@ -26,7 +35,7 @@ const posts = (await getCollection('posts', ({ data }) => {
        Hey! I am Zheng. 
        I work at the intersection of applied mathematics and computer science to solve complex problems. I specialize in algorithm design for machine learning, recommendation systems, and optimization, focusing on creating efficient and scalable solutions for software applications across industries.
       </p>
-      
+
       <ul id="action-links">
         <li><a href="mailto:shi.zheng.qxhs@gmail.com">Email</a></li>
         <li><a href="https://github.com/shizheng-rlfresh">Github</a></li>
@@ -56,21 +65,6 @@ const posts = (await getCollection('posts', ({ data }) => {
         </div>
     </div>
   </section>
-
-  <!-- <section id="finds">
-    <h2 class="solway-regular">Resources</h2>
-      <div class="finds-box">
-    		{resources.map(entry => (
-        <LinkCard
-          type={entry.data.type}
-          title={entry.data.title}
-          publicationDate={entry.data.publicationDate}
-          description={entry.data.description}
-          link={entry.data.link}
-        />
-      ))}
-    </div>
-	</section> -->
 
   <style>
     .card {

@@ -8,9 +8,12 @@ export const PATHS = {
 } as const;
 
 export const CONFIG = {
-  site_title: "Jane Doe | Graphic Designer",
+  site_title: "Zheng Shi | Machine Learing Engineer",
   site_url: "https://www.yoursite.dev",
-  author: "Jane Doe",
-  email: "your@email.com",
+  author: "Zheng Shi",
+  industry_title: "Machine Learning Engineer",
+  academia_title: "Ph.D. in Optimization and Machine Learning",
+  address: "Breinigsville, PA",
+  email: "shi.zheng.qxhs@gmail.com",
   description: "Welcome to my blog!",
 } as const;

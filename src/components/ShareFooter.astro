@@ -1,0 +1,65 @@
+---
+const currentUrl = Astro.request.url || '';  // Default to empty if undefined (for local dev)
+---
+
+<footer>
+    <div class="footer-content">
+      <div class="share-buttons">
+        <a id="twitter-share" href="#" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/icons/icons8-twitterx.svg" alt="Share on Twitter" />
+        </a>
+        <a id="facebook-share" href="#" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/icons/icons8-facebook.svg" alt="Share on Facebook" />
+        </a>
+        <a id="reddit-share" href="#" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/icons/icons8-reddit.svg" alt="Share on Reddit" />
+        </a>
+        <a id="linkedin-share" href="#" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/icons/icons8-linkedin.svg" alt="Share on LinkedIn" />
+        </a>
+      </div>
+    <div class="footer-content">
+      <p>&copy; 2025 Zheng Shi</p>
+    </div>
+    </div>
+</footer>
+
+  <script type="module">
+    const currentUrl = window.location.href;  // Get current URL on client side
+    
+    // Set share URLs for each platform
+    document.getElementById('twitter-share').href = `https://twitter.com/share?url=${currentUrl}`;
+    document.getElementById('facebook-share').href = `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`;
+    document.getElementById('reddit-share').href = `https://www.reddit.com/submit?url=${currentUrl}`;
+    document.getElementById('linkedin-share').href = `https://www.linkedin.com/shareArticle?url=${currentUrl}?mini=true`;
+  </script>
+  
+  <style>
+    footer {
+      margin-top: auto;
+      width: 100%;
+      min-height: 200px;
+      border-top: 1px solid var(--color-border);
+    }
+  
+    .footer-content {
+      max-width: var(--max-width);
+      color: var(--color-text-muted);
+      margin: 0 auto;
+      padding: 2rem var(--gap);
+      text-align: center;
+    }
+  
+    .share-buttons {
+      margin-top: 1rem;
+    }
+  
+    .share-buttons a {
+      margin: 0 0.5rem;
+    }
+  
+    .share-buttons img {
+      width: 24px;
+      height: 24px;
+    }
+  </style>

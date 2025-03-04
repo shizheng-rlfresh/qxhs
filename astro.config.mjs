@@ -26,6 +26,9 @@ export default defineConfig({
       shareables: {
         schema: "src/content/config.ts#shareables",
       },
+      educations: {
+        schema: "src/content/config.ts#educations",
+      },
     },
   },
 });

@@ -1,6 +1,6 @@
 {
-  "name": "yoursite.dev",
-  "short_name": "yoursite.dev",
+  "name": "MyWebSite",
+  "short_name": "MySite",
   "icons": [
     {
       "src": "/web-app-manifest-192x192.png",
@@ -15,7 +15,7 @@
       "purpose": "maskable"
     }
   ],
-  "theme_color": "#ffe6d8",
-  "background_color": "#ffffff",
+  "theme_color": "#2e5d89",
+  "background_color": "#2e5d89",
   "display": "standalone"
 }

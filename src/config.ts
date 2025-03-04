@@ -3,7 +3,7 @@ export const PATHS = {
   about: "/about",
   resume: "/resume",
   posts: "/posts",
-  finds: "/finds",
+  resources: "/resources",
   error404: "/404",
 } as const;
 

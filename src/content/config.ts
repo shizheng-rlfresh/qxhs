@@ -15,7 +15,7 @@ export const posts = defineCollection({
   }),
 });
 
-export const finds = defineCollection({
+export const resources = defineCollection({
   type: "content",
   schema: z.object({
     title: z.string(),

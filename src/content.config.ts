@@ -26,8 +26,9 @@ const posts = defineCollection({
   }),
 });
 
-const finds = defineCollection({
-  loader: glob({ pattern: "*.md", base: "./src/content/finds" }),
+// Define Learning Resources Collection
+const articles = defineCollection({
+  loader: glob({ pattern: "*.md", base: "./src/content/resources/articles" }),
   schema: z.object({
     title: z.string(),
     link: z.string(),
@@ -38,4 +39,17 @@ const finds = defineCollection({
   }),
 });
 
-export const collections = { posts, finds };
+// Define Tools & Software Collection
+const shareables = defineCollection({
+  loader: glob({ pattern: "*.md", base: "./src/content/resources/shareables" }),
+  schema: z.object({
+    title: z.string(),
+    link: z.string(),
+    description: z.string(),
+    category: z.string(),
+    publicationDate: z.coerce.date(),
+    public: z.boolean().default(true),
+  }),
+});
+
+export const collections = { posts, articles, shareables };

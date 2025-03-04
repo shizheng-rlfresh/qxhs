@@ -11,11 +11,6 @@ const posts = (await getCollection('posts', ({ data }) => {
     .sort((a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf())
     .slice(0,5);
 
-const finds = (await getCollection('finds', ({ data }) => {
-    return data.public !== false;
-}))
-    .sort((a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf())
-    .slice(0, 10);
 ---
 
 <Layout title="Home">
@@ -48,17 +43,6 @@ Let’s connect! Whether it’s a collaboration or just a chat about AI, I’d l
 
     <hr />
 
-    <section id="skills">
-        <h2 class="solway-regular">Skills</h2>
-          <ul class="pill-list">
-              <li>Photoshop</li>
-              <li>Figma</li>
-              <li>etc.</li>
-          </ul>
-        </section>
-
-	<hr />
-
   <section id="recent-posts" class="posts-section">
     <h2 class="solway-regular">Latest Posts</h2>
     <div class="posts-grid">
@@ -77,10 +61,10 @@ Let’s connect! Whether it’s a collaboration or just a chat about AI, I’d l
     </div>
   </section>
 
-  <section id="finds">
-    <h2 class="solway-regular">Today I Found...</h2>
+  <!-- <section id="finds">
+    <h2 class="solway-regular">Resources</h2>
       <div class="finds-box">
-    		{finds.map(entry => (
+    		{resources.map(entry => (
         <LinkCard
           type={entry.data.type}
           title={entry.data.title}
@@ -90,7 +74,7 @@ Let’s connect! Whether it’s a collaboration or just a chat about AI, I’d l
         />
       ))}
     </div>
-	</section>
+	</section> -->
 
   <style>
     .card {

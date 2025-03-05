@@ -1,6 +1,6 @@
 # Zheng Shi - Personal Website
 
-![drogba](/assets/pics/drogba.webp)
+![drogba](public/assets/pics/drogba.webp)
 
 ## Credits
 

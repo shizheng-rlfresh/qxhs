@@ -2,51 +2,77 @@
 title: "How I started the journey? - Part I.3"
 slug: "part-time-phd-3"
 description: "Stories about my journey as a part-time Ph.D."
-publicationDate: 2024-02-02
+publicationDate: 2024-01-14
 category: "Story"
 public: true
 author: "Zheng Shi"
 ---
 
-<span style="color:gray; font-style:italic;">“You will get the same treatment!”</u> </span>
+This part of my writing is the memory lane of me getting into the PhD program. It was a glorious feeling. I remember having a period of intense anxiety about the PhD application, and then finally be admitted into a PhD program. That was in the end of 2016.
 
-It was a nice and quiet evening in the summer of 2016. I got a phone call from my advisor that the committee voted for my admission, and I was officially locked in! Finally, after a few uneasy and anxious months, I made it through. I still remember that wife and I celebrated it with a nice bottle of wine! What a beautiful gift for a soon-to-be 30 years old crazy man!
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExenU3aGhsbGVlMm5wcjQ1MzJpYmYyeWp0aDQ2cG94dmtxOG9nY3czcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5GoVLqeAOo6PK/giphy.gif" alt="Acceptance email reaction - Person jumping with excitement" />
+</p>
 
-A few days later, I had a meeting with the department chair, who made a joke saying “You will get the same treatment!” That was exactly what I wanted to hear from the chair! I would be dead if they tailored a particularly less rigorous plan simply because I was a part-time student.
+
+It was a strange PhD, an industrial PhD. You'd never hear it often because, part-time or not, I found it hard to argue for the necessity of a PhD.
+
+<div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
+    <span style="margin-right: 10px;">🙀</span> 
+    <span>Given the nature of my PhD, I rarely care about "the impact" in a formal sense, instead, I focused on the impact of my research for my industry or company.</span> 
+</div>
+
+<br>
+I was a bit afraid to be a student again, after a few years of industry experience. When I was accepted, I realized that I would need to adhere to the normal standards of a PhD student in terms of quality of work, creativity, and independence.
+
+I was a true PhD student, not a special breed, even if I was a part-time student rather than a full-time one. No special treatment was necessary or desired.
+
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzRtYmZybjQ1MXh5cnJ6d2ZvNnl5aHN3ZWZ0ZTB0NDJhems3ejNxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2K5jinAlChoCLS/giphy.gif" alt="PhD student reality - Person drowning in books and papers" />
+</p>
+
+
+Ideally, I would want to behave and perform like just a normal PhD student. I had read that the PhD student was an apprentice of the academics, someone who is learning to be a researcher rather someone simply learning knowledge. So, I didn't want any special treatment, since treating me differently would train me to be a "special" researcher. 
 
 <div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
     <span style="margin-right: 10px;">🤔</span> 
-    <span>The last thing I wanted was: I worked so hard to convince the committee, but they were giving me a special treatment. You should be very clear that they will not loosen one bit of academic requirement. Would you want to get a different diploma? Or, a same one except with a footnote saying “this guy was not treated as a real Ph.D. student”? That said, if they allow a bit loosened on-campus study rule, it might save you a lot of hassle. </span> 
+    <span>Like a good student, it should be true for me that I should be able to identify on my own novel research problems, and produce good work that solves the problem / adds a new perspective. Then I would learn to communicate the research finding to the community by giving talks / writing papers. Finally, I respond to the scrutiny and feedback from the research community by defending my views or refining them!</span> 
 </div>
 
 <br>
 
-The excitement quickly faded away as I started worrying about a list of things. For instance, I worried about if I would be able to manage my focus for a 45-minutes lecture. I hadn’t been in school for almost 3 years! The list just kept growing until I regretted doing it.
+With that in mind, I was a bit anxious of the "free-pass" PhD, where they would say "as long as you pay the tuition, we will give you a PhD".
 
-I guess it was a short period of time, a few weeks maybe, that I had a very serious imposer syndrome: “Did I steal the spot from someone else?” “I can’t be doing this thing!” “Help me!” The feeling was so strong that I still remember every bit of details till these days.
+I am almost sure such things do not exist, especially for a reputable school. I can't imagine the amount of shame I'd feel if there is a way for someone to pay for a PhD. It is way more than a transactional matter, it is about the intrinsic pursuit of one's intellectual curiosity.
 
-Luckily, I wasn’t bothered by the fraudulent self-portrait for too long, as I had to figure out how to cope with my shaky mathematical background.
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExenZjNmtvMTlkbHN2dDV6Z2Frd2JuanZqZjVpbnN2cW5qZjJyem95eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/67ThRZlYBvibtdF9JH/giphy.gif" alt="Paying for PhD - Cash being exchanged for diploma with worried face" />
+</p>
 
-I earned a <i><u>B.A. in English</u></i> and a <i><u>B.Econ in Finance</u></i> before started my master program at Lehigh, so it is safe to say I didn’t have a great maths background.
 
-Even after the master program, I knew my maths skill was quite shaky. Yet, somehow, I made up my mind that I could handle a maths-heavy Ph.D. program just fine! And, even crazier, I got accepted to the program!
+The first few classes were so confusing, everyone was saying words I hadn't heard for 3+ years. I had to go back to textbooks, many of which I've already sold during my master programs, to refresh myself with all the formal terminologies. I had been working in industry, where simple terminology with 80% accuracy works better than the most precise terminologies.
+
+To make it worse, I had a bad habit of reading & watching EVERYTHING AT ONCE. My browser was filled with 30+ tabs covering all dimensions & facets of a topic, all without a filter of relevancy. I tried to read everything, without being able to tell how valuable a piece of reading material could be.
 
 <div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
-    <span style="margin-right: 10px;">🤔</span> 
-    <span>I tend to believe anyone working on a part-time Ph.D. gotta be in a much better position than me in terms of academic readiness. But, even if you are not so good at something, it could be just fine. You probably just don’t know you are actually pretty good at them yet.</span> 
+    <span style="margin-right: 10px;">😮‍💨</span> 
+    <span>It was worse in the beginning years, as I was constantly doubting my own ability to produce novel ideas. Is my PhD ever going to be good enough? Am I making a good use of my time? Those were questions I asked myself regularly. So, I read a ton without synthesizing and reflecting.</span> 
 </div>
 
 <br>
 
-Years later, my fellow doctors joked about we were just a bunch of <a href="https://en.wikipedia.org/wiki/List_of_inequalities">Ph.D. in “Inequalities”</a> because we all had to use some kind of inequalities as mathematical tricks to figure out the proofs of some algorithms. In that sense, it would be an overstatement that one must be a mathematician to finish the Ph.D.. But, it was no doubt that I had to figure out how to build a solid mathematical foundation before knowing how to use those tricks, and to use them well.
+Actually, that first semester was one of the most confusing times in my life. I was struggling to shift from reading science to creating it. I was spending more time complaining how difficult it was than being productive.
+
+Over the winter break, I spent quite some time doing homework, writing first drafts, and meeting others to discuss about the topics that were related to the PhD. Strangely, I had a very strong memory of the first winter break, I finally admitted to myself that getting a PhD was truly challenging. I had a moment of doubt if I can finish it, if it was a mistake to enroll in the program!
 
 <div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
-    <span style="margin-right: 10px;">🤔</span> 
-    <span>Some engineering fields favor a strong background in mathematics, but some doesn’t. For those requiring solid foundation in mathematics, the chances for them to study mathematics is almost zero. The reason for them to attribute heavily to mathematics is more for having a Ph.D. student know how to use mathematics as a tool. That said, unless you are thinking of a maths major, I doubt yours requires more maths than the field I worked in.</span> 
+    <span style="margin-right: 10px;">🙀</span> 
+    <span>Why would I do such a horrible thing to myself? Do I need a PhD to begin with? Wouldn't it be enough to learn things on my own?</span> 
 </div>
 
-<br>
+Many years later now, I managed to get the degree. Honestly, it was a tough journey, with unimaginable challenges. But, I learned a ton throughout the process, and I am glad I went through it.
 
-Two years into the program, I was surprised how much I fell in love with theoretical stuff, a lot maths and fun. I will talk more about it in next part.
-
-<br>
+<div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
+    <span style="margin-right: 10px;">😻</span> 
+    <span>This post was a bit different from how I organize my blog post. I am also learning to write more authentic piece, rather than a post after rigorous organization. This more closely resembles how I've been thinking of the experience. You'll have to bear with me if some of the points aren't well stated.</span> 
+</div>

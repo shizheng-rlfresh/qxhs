@@ -7,223 +7,291 @@ const { activeNav } = Astro.props;
 ---
 
 <header class="header">
-      <div class="logo">
-        <a href="/" id="home">
-          <img src="/assets/icons/chelsea.svg" alt="Home" width="32" height="32">
-            &nbsp;&gt;&nbsp;Home
-          </span>
-        </a>
+  <div class="header-container">
+    <div class="logo">
+      <a href="/" id="home" class="logo-link">
+        <img src="/assets/icons/chelsea.svg" alt="Home" width="32" height="32">
+        <span class="logo-text">&gt; Home</span>
+      </a>
+    </div>
+    <nav class="nav">
+      <ul class="menu">
+        <li class={`menu-item ${activeNav === 'about' ? 'active' : ''}`}>
+          <a href="/about/" class="nav-link">
+            <span class="nav-text">About</span>
+          </a>
+        </li>
+        <li class={`menu-item ${activeNav === 'posts' ? 'active' : ''}`}>
+          <a href="/posts/" class="nav-link">
+            <span class="nav-text">Posts</span>
+          </a>
+        </li>
+        <!-- <li class={`menu-item ${activeNav === 'resources' ? 'active' : ''}`}>
+          <a href="/resources/" class="nav-link">
+            <span class="nav-text">Resources</span>
+          </a>
+        </li> -->
+      </ul>
+      <div class="nav-right">
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sun-icon">
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="moon-icon">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+        <button class="hamburger" aria-label="Toggle Menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
       </div>
-      <nav class="nav">
-        <ul class="menu">
-          <li>
-            <a href="/about/">
-              About
-            </a>
-          </li>
-          <li>
-            <a href="/posts/">
-                Posts
-            </a>
-          </li>
-          <!-- <li>
-            <a href="/resources/">
-                Resources
-            </a>
-          </li> -->
-        </ul>
-        <div class="nav-right">
-          <!-- <a href="/rss.xml" title="RSS Feed" class="rss-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 11a9 9 0 0 1 9 9" />
-              <path d="M4 4a16 16 0 0 1 16 16" />
-              <circle cx="5" cy="19" r="1" />
-            </svg>
-            <span class="sr-only">RSS Feed</span>
-          </a> -->
-          <button class="hamburger" aria-label="Toggle Menu">
-            <span class="line"></span>
-            <span class="line"></span>
-            <span class="line"></span>
-          </button>
-        </div>
-      </nav>
-    </header>
+    </nav>
+  </div>
+</header>
 
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const menu = document.querySelector('.menu');
+<style>
+  .header {
+    width: 100%;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    background-color: rgba(var(--color-background-rgb), 0.8);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    transition: all var(--transition-medium);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
 
-        hamburger?.addEventListener('click', () => {
-          menu?.classList.toggle('active');
-        });
+  .header-container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
-        // Close menu when clicking outside
-        document.addEventListener('click', (event) => {
-          const target = event.target as HTMLElement;
-          if (!target.closest('.nav') && menu?.classList.contains('active')) {
-            menu.classList.remove('active');
-          }
-        });
-    </script>
+  .logo {
+    flex-shrink: 0;
+  }
 
-    <style>
-      .header {
-        position: sticky;
-        top: 0;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background-color: var(--color-background);
-        color: var(--color-text-base);
-        box-shadow: 2px 9px 24px 0px rgba(0,0,0,0.5);
-        -webkit-box-shadow: 2px 9px 24px 0px rgba(0,0,0,0.5);
-        -moz-box-shadow: 2px 9px 24px 0px rgba(0,0,0,0.5);
-        padding: 10px 20px;
-        z-index: 1000;
-        border-bottom: 2px solid var(--color-border); 
-      }
+  .logo-link {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: transform var(--transition-medium);
+  }
 
-      .logo {
-        display: flex;
-        align-items: center;
-        color: var(--color-text-base);
-      }
+  .logo-link:hover {
+    transform: scale(1.05);
+  }
 
-      .logo a {
-        display: flex;
-        align-items: center;
-        padding: 0 0.25em;
-      }
+  .logo-text {
+    margin-left: 0.5rem;
+    background: linear-gradient(45deg, var(--color-accent), var(--color-button-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+  }
 
-      .logo #home:hover {
-        color: var(--color-link);
-      }
+  .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-left: 2rem;
+  }
 
-      .logo svg {
-        width: 32px;
-      }
+  .menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 1.5rem;
+  }
 
-      .logo svg path {
-        fill: none;
-        stroke: var(--color-text-base);
-      }
+  .menu-item {
+    position: relative;
+  }
 
-      .logo #home {
-        font-size: var(--step-1);
-        margin-right: 10px;
-        color: var(--color-text-base);
-        text-decoration: none;
-      }
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 0;
+    font-weight: 500;
+    position: relative;
+  }
 
-      .nav {
-        display: flex;
-        align-items: center;
-      }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--color-accent);
+    transition: width var(--transition-medium);
+  }
 
-      .nav-right {
-        display: flex;
-        align-items: center;
-        padding-left: 1em;
-        gap: 1rem;
-      }
+  .nav-link:hover::after,
+  .active .nav-link::after {
+    width: 100%;
+  }
 
-      .menu {
-        display: flex;
-        list-style: none;
-        margin: 0;
-        padding: 0;
-      }
+  .nav-right {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
 
-      .menu li {
-        margin-left: 20px;
-      }
+  .theme-toggle {
+    background: none;
+    border: none;
+    color: var(--color-text-base);
+    cursor: pointer;
+    padding: 0.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-medium);
+  }
 
-      .menu li a {
-        color: var(--color-text-base);
-        text-decoration: none;
-        padding: 0 0.25em;
-      }
+  .theme-toggle:hover {
+    background-color: rgba(var(--color-accent-rgb, 194, 123, 222), 0.1);
+    transform: rotate(15deg);
+  }
 
-      .menu li a:hover {
-        color: var(--color-link);
-      }
+  .sun-icon {
+    display: none;
+  }
 
-      .hamburger {
-        display: none;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 24px;
-        height: 24px;
-        background: transparent;
-        border: none;
-        cursor: pointer;
-        padding: 0;
-        z-index: 10;
-      }
+  .moon-icon {
+    display: block;
+  }
 
-      .hamburger .line {
-        width: 24px;
-        height: 2px;
-        background-color: var(--color-text-base);
-        margin: 0;
-        transition: all 0.3s linear;
-        position: relative;
-        transform-origin: 1px;
-      }
+  html.light-mode .sun-icon {
+    display: block;
+  }
 
-      .rss-link {
-        display: flex;
-        color: var(--color-text-base);
-        align-items: center;
-        padding: 0 0.25em;
-      }
+  html.light-mode .moon-icon {
+    display: none;
+  }
 
-      .rss-link svg {
-        width: 24px;
-        height: 24px;
-      }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+  }
 
-      .rss-link:hover {
-        color: var(--color-link);
-      }
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: var(--color-text-base);
+    transition: all var(--transition-medium);
+    border-radius: 10px;
+  }
 
-      .sr-only {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        padding: 0;
-        margin: -1px;
-        overflow: hidden;
-        clip: rect(0, 0, 0, 0);
-        white-space: nowrap;
-        border: 0;
-      }
+  @media (max-width: 768px) {
+    .nav {
+      margin-left: 1rem;
+    }
 
-      @media (max-width: 768px) {
-        .hamburger {
-          display: flex;
-        }
+    .hamburger {
+      display: flex;
+      z-index: 101;
+    }
 
-        .menu {
-          display: none;
-          position: absolute;
-          top: 100%;
-          right: 0;
-          background-color: var(--color-background);
-          padding: 1rem;
-          box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-          border: 1px solid var(--color-border);
-        }
+    .menu {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: 70%;
+      max-width: 300px;
+      height: 100vh;
+      background-color: var(--color-background);
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      transition: right var(--transition-medium);
+      box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+      z-index: 100;
+    }
 
-        .menu.active {
-          display: flex;
-          flex-direction: column;
-        }
+    .menu.active {
+      right: 0;
+    }
 
-        .menu li {
-          margin: 0.5rem 0;
-          text-align: right;
-        }
-      }
-    </style>
+    .nav-link {
+      font-size: 1.2rem;
+    }
+
+    .hamburger.active .line:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.active .line:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .line:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
+    }
+  }
+</style>
+
+<script>
+  // Menu toggle functionality
+  const hamburger = document.querySelector('.hamburger');
+  const menu = document.querySelector('.menu');
+  const body = document.body;
+
+  hamburger?.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menu?.classList.toggle('active');
+    body.classList.toggle('menu-open');
+  });
+
+  // Theme toggle functionality
+  const themeToggle = document.getElementById('theme-toggle');
+  
+  // Check for saved theme preference or use the system preference
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'light') {
+    document.documentElement.classList.add('light-mode');
+  } else if (savedTheme === 'dark') {
+    document.documentElement.classList.remove('light-mode');
+  } else if (window.matchMedia && window.matchMedia('(prefers-color-scheme: light)').matches) {
+    document.documentElement.classList.add('light-mode');
+  }
+
+  // Toggle theme when button is clicked
+  themeToggle?.addEventListener('click', () => {
+    document.documentElement.classList.toggle('light-mode');
+    
+    // Save preference to localStorage
+    if (document.documentElement.classList.contains('light-mode')) {
+      localStorage.setItem('theme', 'light');
+    } else {
+      localStorage.setItem('theme', 'dark');
+    }
+  });
+</script>

@@ -18,70 +18,114 @@ const formattedDate = date.toLocaleDateString('en-UK', {
 ---
 
 <article class="post-card">
-  <a href={`/posts/${slug}`}>
-  <div class="post-meta">
-    <span class="category">{category}</span>
-    <time datetime={date.toISOString()}>{formattedDate}</time>
+  <div class="post-card-content">
+    <div class="post-meta">
+      <span class="category">{category}</span>
+      <time datetime={date.toISOString()}>{formattedDate}</time>
+    </div>
+    
+    <h3 class="post-title">
+      <a href={`/posts/${slug}`}>{title}</a>
+    </h3>
+    
+    <p class="post-excerpt">{description}</p>
+    
+    <a href={`/posts/${slug}`} class="read-more">Read more</a>
   </div>
-  <h3 class="post-title">
-    {title}
-  </h3>
-  <p class="post-description">{description}</p>
-  </a>
 </article>
 
 <style>
   .post-card {
-    padding: 1.5rem;
-    border: 0;
-    border-radius: 0.5rem;
-    transition: transform 0.2s ease-in-out;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--color-card);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
 
   .post-card:hover {
-    border: 1px solid var(--color-text-base);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
   }
 
-  .post-card a:hover {
-    text-decoration: none;
+  .post-card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
   }
 
   .post-meta {
     display: flex;
-    gap: 1rem;
-    margin-bottom: 0.5rem;
-    font-size: 0.875rem;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: var(--step--1);
     color: var(--color-text-muted);
   }
 
   .category {
     text-transform: capitalize;
-    color: var(--color-text-base);
+    color: var(--color-accent);
     font-weight: 500;
+    position: relative;
+    padding-left: 0.5rem;
+  }
+
+  .category::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 1rem;
+    background-color: var(--color-accent);
+    border-radius: 3px;
   }
 
   .post-title {
     margin: 0;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     font-weight: 600;
+    font-size: var(--step-1);
   }
 
   .post-title a {
     color: var(--color-text-base);
     text-decoration: none;
-    padding: 0;
+    transition: color 0.3s ease;
   }
 
   .post-title a:hover {
-    color: var(--color-text-link);
+    color: var(--color-accent);
   }
 
-  .post-card:hover a {
-    color: var(--color-link);
-  }
-
-  .post-description {
-    margin: 0;
+  .post-excerpt {
+    margin: 0 0 1.5rem 0;
     color: var(--color-text-muted);
+    line-height: 1.6;
+    flex-grow: 1;
+  }
+
+  .read-more {
+    align-self: flex-start;
+    position: relative;
+    font-weight: 500;
+    color: var(--color-accent);
+    transition: all 0.3s ease;
+  }
+
+  .read-more::after {
+    content: '→';
+    margin-left: 0.3rem;
+    transition: transform 0.3s ease;
+    display: inline-block;
+  }
+
+  .read-more:hover::after {
+    transform: translateX(4px);
   }
 </style>

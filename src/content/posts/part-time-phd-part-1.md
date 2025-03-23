@@ -8,10 +8,10 @@ public: true
 author: "Zheng Shi"
 ---
 
-<span style="color:gray; font-style:italic;">“Do you still remember why you wanted to do it?” After 5.5 years, when I finally hung that piece of nicely framed wall decoration, I still remembered why I chose to do it. </span>
+<span style="color:gray; font-style:italic;">"Do you still remember why you wanted to do it?" After 5.5 years, when I finally hung that piece of nicely framed wall decoration, I still remembered why I chose to do it. </span>
 
 
-It wouldn’t surprise me, if, in a few years, your memory becomes a bit blurry, and you couldn’t remember exactly why you started the journey.
+It wouldn't surprise me, if, in a few years, your memory becomes a bit blurry, and you couldn't remember exactly why you started the journey.
 
 Studying for a Ph.D. is an extremely demanding job, filled with moments of frustration and anxiety. Yet, it never fails to offer surprises and uncertainties.
 
@@ -24,16 +24,30 @@ You could start yours young and ambitious, determined to be a scientist, and end
 
 <div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
     <span style="margin-right: 10px;">🤔</span> 
-    <span>To most people, including your full-time peers, it would be quite a luxury to spend their early 30s in such a unique way. It was still surreal to me even after a few months into the program. I  had a fantasy that I was living in someone else’s life, very peculiar.</span> 
+    <span>To most people, including your full-time peers, it would be quite a luxury to spend their early 30s in such a unique way. It was still surreal to me even after a few months into the program. I  had a fantasy that I was living in someone else's life, very peculiar.</span> 
 </div>
 
 <br>
+
+Before I dive into my personal journey of being a full-time professional and part-time PhDer, let me start with a very pragmatic and empirical question.
+
+#### Why do you want to get a Ph.D.?
+
+You better pause and think about this question for a moment now, as it is going to haunt you for quite a while.
+
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXk4ZDI3eTZkcXZ2cXkzaHhqYTZobXlkOTFiOWxicGZkZGN5YjZycCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btZ1Gm7ZL25pLMs/giphy.gif" alt="PhD Motivation - Someone looking confused with caption 'Me trying to remember why I started this PhD'" />
+</p>
+
+Let me reiterate: it is very important to know why! It helps you stay motivated through the journey, more so as a part-timer.
+
+For part-timers, you probably have already had somewhat of a career, somewhere between being an early professional and having a decade of experience. To me, if you have had a steady state of income, you have a completely different risk profile than full-time students. Even if you'd switch back to being a student after years of working, your feeling about doing a PhD would be very different from those who go directly to PhD right after undergrad or master's.
 
 I graduated from Lehigh University in 2022 with a <u>_Ph.D. in Industrial Engineering_</u>.
 
 It is funny that my research had little to do with IE. I spent most of my research efforts cracking a specific subset of algorithms in the intersection of <u>_Computer Science_</u> and <u>_Optimization_</u>. A majority of the research groups in my field are under CS departments. If you know what ADAM or SGD is, you know 90% of what my research was about.
 
-In particular, I was mostly concerned with the efficiency of training an ML model, and how to make the training autonomous. This is the field of designing adaptive optimization algorithms. It is still a cutting edge field, very little “known” and a lot of “unknown”. But, one day, we might be able to train a model at the scale of GPT4 in just a few (hundreds of) iterations from the scratch.
+In particular, I was mostly concerned with the efficiency of training an ML model, and how to make the training autonomous. This is the field of designing adaptive optimization algorithms. It is still a cutting edge field, very little "known" and a lot of "unknown". But, one day, we might be able to train a model at the scale of GPT4 in just a few (hundreds of) iterations from the scratch.
 <br>
 
 <figure style="display: flex; flex-direction: column; align-items: center; text-align: center;">
@@ -54,21 +68,20 @@ Looking around the people I knew, friends, family or acquaintances, I could coun
 
 <br>
 
-Looking back, I think I was a particular type of person, who never followed the conventional “wisdom”. Or, I should put it in this way: I never felt like following it even though sometimes I had to. From time to time, I often found myself having weird or even crazy ideas. I was certainly a contrary when I embraced the “torture”. Who would do a Ph.D. at an age of 30? Pretty sure that’s not a societal norm.
+Looking back, I think I was a particular type of person, who never followed the conventional "wisdom". Or, I should put it in this way: I never felt like following it even though sometimes I had to. From time to time, I often found myself having weird or even crazy ideas. I was certainly a contrary when I embraced the "torture". Who would do a Ph.D. at an age of 30? Pretty sure that's not a societal norm.
 
 <br>
 
 <div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
     <span style="margin-right: 10px;">📖</span> 
-    <span style="font-style: italic;">A <b>Contrary</b>, in some Native American cultures, is a person who adopts behavior deliberately the opposite of other tribal members. (source: <a href="https://en.wikipedia.org/wiki/Contrary_(social_role)">Wikipedia</a>)</span> 
+    <span style="font-style: italic;">A <b>Contrary</b>, in some Native American cultures, is a person who adopts behavior deliberately the opposite of other tribal members. (source: <a href="https://en.wikipedia.org/wiki/Contrary_(social_role)">Wikipedia</a>)</span> 
 </div>
-
 
 Being a contrary momentarily is very easy. We all had some flashes of memories of believing the rest of world was wrong. Being a persistent contrary is not easy, and being a consciously persistent one is often the most difficult.
 
 <div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
     <span style="margin-right: 10px;">😮‍💨</span> 
-    <span>Among those I knew who actually did it, over half of them ended up quitting theirs. A bit sad I’d say. But things like that always happened, and it will happen to some of you. If I would quit at some point, the best thing I could have done was to quit before it ever started! Then, you would not be able to read my stories.</span> 
+    <span>Among those I knew who actually did it, over half of them ended up quitting theirs. A bit sad I'd say. But things like that always happened, and it will happen to some of you. If I would quit at some point, the best thing I could have done was to quit before it ever started! Then, you would not be able to read my stories.</span> 
 </div>
 
 <br>
@@ -90,12 +103,12 @@ That said, it is still too early to call whether or not it was the best way to s
 
 <div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
     <span style="margin-right: 10px;">🤔</span> 
-    <span>It seems a riskier job to work on getting a Ph.D. in early 30s than, say, in early 20s. But, I would argue that it all boils down to the risk-reward calculation. If I had a 7-figure salary job, I probably wouldn’t want to be distracted by a doctoral study. But, if I can handle a 6-figure salary job while doing what I loved doing, it probably wouldn’t be that bad. Taking a calculated risk and knowing the opportunity cost is the way how I looked at it.</span> 
+    <span>It seems a riskier job to work on getting a Ph.D. in early 30s than, say, in early 20s. But, I would argue that it all boils down to the risk-reward calculation. If I had a 7-figure salary job, I probably wouldn't want to be distracted by a doctoral study. But, if I can handle a 6-figure salary job while doing what I loved doing, it probably wouldn't be that bad. Taking a calculated risk and knowing the opportunity cost is the way how I looked at it.</span> 
 </div>
 
 <br>
 
-In case I would ever regret doing it, I actually tried very hard to think of any validate reasons of not doing it. At the end of the day, I couldn’t figure out anything convincing. So, I knew I couldn’t get away from the idea, and I should just follow my heart.
+In case I would ever regret doing it, I actually tried very hard to think of any validate reasons of not doing it. At the end of the day, I couldn't figure out anything convincing. So, I knew I couldn't get away from the idea, and I should just follow my heart.
 
 I still hold my belief firmly till this day: following through a Ph.D. program is the easiest way to get knowledge and, even better, to create knowledge. It is a highly productive process, which has been validated by its own history. Every piece in the process has been repeated millions of times in the history, and the chance of having any unique situation is very low. Although the system does not guarantee any individual success, I had no doubt in myself.
 

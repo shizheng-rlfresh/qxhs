@@ -22,6 +22,7 @@ I see myself as a builder, turning these algorithms into scalable software that 
 <br>
 
 - Professional Experience
+  - 10/2025 - 12/2025: Sabbatical
   - 2024 - Present: [Staff Engineer](), Machine Learning - Oden Technologies
   - 2021 - 2024: [Team Lead](), Machine Learning - IBM
   - 2016 - 2022: [Research Assistant]() - Lehigh University

@@ -23,6 +23,13 @@ console.log(educations);
 ---
 
 <Layout title="Home">
+	<script type="application/ld+json" set:html={JSON.stringify({
+		"@context": "https://schema.org",
+		"@type": "Person",
+		"name": CONFIG.author,
+		"url": CONFIG.site_url,
+		"jobTitle": "Machine Learning Engineer"
+	})}></script>
  	<section id="hero">
       <div id="hero-title">
         <img src="/assets/avatar.png" alt="My avatar">

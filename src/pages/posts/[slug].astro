@@ -19,7 +19,7 @@ const { Content } = await render(post);
 
 ---
 
-<PostSnugLayout title={post.data.title} description={post.data.description}>
+<PostSnugLayout title={post.data.title} description={post.data.description} publicationDate={post.data.publicationDate} editDate={post.data.editDate} author={post.data.author}>
   <Breadcrumbs path={['posts', post.data.title]} />
   <article class="post-container">
     <div class="post-background"></div>

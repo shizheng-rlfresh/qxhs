@@ -1,2 +1,7 @@
 /node_modules
 /dist
+/.astro
+
+# Private Claude context & planning notes
+CLAUDE.md
+notes/

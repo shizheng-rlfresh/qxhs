@@ -24,6 +24,8 @@ const { title = CONFIG.site_title, description = CONFIG.description } = Astro.pr
 	<title>{CONFIG.author} | {title}</title>
 	<meta name="title" content="{CONFIG.author} | {title}" />
 	<meta name="description" content={description} />
+	<meta name="author" content={CONFIG.author} />
+	<link rel="canonical" href={Astro.url} />
 
 	<!-- Open Graph / Facebook -->
 	<meta property="og:type" content="website" />

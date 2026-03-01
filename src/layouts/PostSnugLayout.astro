@@ -5,13 +5,23 @@ import Footer from "@components/Footer.astro";
 import Header from "@components/Header.astro";
 import { CONFIG } from "../config";
 
-const { title = CONFIG.site_title, description = CONFIG.description, image = "/og-default.jpg" } = Astro.props;
+const { title = CONFIG.site_title, description = CONFIG.description, image = "/og-default.jpg", publicationDate, editDate, author } = Astro.props;
 ---
 
 <!doctype html>
 <html lang="en-us">
 	<head>
 		<HeadContent title={title} description={description} image={image} />
+		{publicationDate && <script type="application/ld+json" set:html={JSON.stringify({
+			"@context": "https://schema.org",
+			"@type": "Article",
+			"headline": title,
+			"description": description,
+			"datePublished": publicationDate.toISOString(),
+			"dateModified": (editDate ?? publicationDate).toISOString(),
+			"author": { "@type": "Person", "name": author ?? CONFIG.author },
+			"url": Astro.url.href
+		})}></script>}
 	</head>
 	<body>
 		<Header />

@@ -8,8 +8,8 @@ export const PATHS = {
 } as const;
 
 export const CONFIG = {
-  site_title: "Zheng Shi | Machine Learing Engineer",
-  site_url: "https://www.yoursite.dev",
+  site_title: "Zheng Shi | Machine Learning Engineer",
+  site_url: "https://www.zhengqxhs.com",
   author: "Zheng Shi",
   industry_title: "1/2 Engineer",
   academia_title: "1/2 Scientist",

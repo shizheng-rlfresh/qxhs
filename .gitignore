@@ -2,6 +2,7 @@
 /dist
 /.astro
 
-# Private Claude context & planning notes
+# Private Claude, Codex, and context & planning notes
 CLAUDE.md
+AGENTS.md
 notes/

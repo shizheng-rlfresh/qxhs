@@ -19,7 +19,7 @@ author: "Zheng Shi"
 
 <br>
 
-In [Part I](/blog/missing-guide-leetcode), I wrote about how Leetcode trains you to search your memory instead of reason from the problem. That post was about solving problems *correctly*: understand the contract, propose hypotheses, find the invariant.
+In [Part I](/src/content/posts/missing-guide-leetcode), I wrote about how Leetcode trains you to search your memory instead of reason from the problem. That post was about solving problems *correctly*: understand the contract, propose hypotheses, find the invariant.
 
 This post is about what comes after. You solved the problem. Now you need to evaluate your solution. And this is where things get interesting.
 

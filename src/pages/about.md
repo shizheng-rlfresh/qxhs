@@ -48,7 +48,7 @@ I am currently on sabbatical, focused on three tracks:
 
 ## Work With Me
 
-I am selective about what I take on, but always open to interesting conversations around:
+I am always open to thoughtful conversations around:
 
 - Applied ML and AI consulting.
 - Technical collaboration, writing, and speaking.

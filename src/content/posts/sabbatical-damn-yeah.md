@@ -34,9 +34,9 @@ There were also family obligations that demanded my full attention — not the k
 
 <br>
 
-<div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
-    <span style="margin-right: 10px;">🤔</span> 
-    <span>There is a version of me that would have immediately jumped into the next job. That version would have been fine on paper and miserable in practice. I decided not to be that version.</span> 
+<div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;">
+    <span style="margin-right: 10px;">🤔</span>
+    <span>There is a version of me that would have immediately jumped into the next job. That version would have been fine on paper and miserable in practice. I decided not to be that version.</span>
 </div>
 
 <br>
@@ -62,9 +62,9 @@ While traveling in China, a consulting opportunity found me through friends. I h
 
 <br>
 
-<div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
-    <span style="margin-right: 10px;">😎</span> 
-    <span>A sabbatical isn't retirement. It's a deliberate pause to make the next chapter better than it would have been without the pause.</span> 
+<div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;">
+    <span style="margin-right: 10px;">😎</span>
+    <span>A sabbatical isn't retirement. It's a deliberate pause to make the next chapter better than it would have been without the pause.</span>
 </div>
 
 <br>

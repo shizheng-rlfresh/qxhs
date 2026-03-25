@@ -17,7 +17,7 @@ author: "Zheng Shi"
 
 </br>
 
-**There's a way of looking at the world that, once it settles in, doesn't leave.**
+#### There's a way of looking at the world that, once it settles in, doesn't leave
 
 Take whatever we consider the most advanced technology of any era. The printing press. Gunpowder. The internet. Artificial intelligence. Every single one of them was born from the same two impulses: the desire for more resources and the desire for more control. Money and power. That's not a conspiracy or a design flaw. Nobody planned it that way. It's just where things end up when billions of human drives interact over time. The technology changes every generation. The destination hasn't changed once.
 
@@ -25,7 +25,7 @@ This isn't a complaint. It's an observation about the machinery. The pattern is 
 
 There's actually something in physics that works the same way, and most of us already accept it without thinking twice. At the quantum level, particles do strange things. Probabilistic, uncertain, nothing like the world we touch. But zoom out far enough, let trillions of those interactions pile up, and you get the solid table we put our coffee on every morning. The table is real. We can lean on it. But it is not what we think it is. Mostly empty space, held together by forces that have nothing to do with how the table feels under our hands.
 
-**Civilization is that table.**
+#### Civilization is that table
 
 Human drives at the individual level are not complicated. We want to survive. We want to pass something on. We want to belong somewhere. We want to feel safe. At the macro level, all of those drives interacting across time produce what we call society. Laws, nations, currencies, moral codes, religions. They feel solid. We lean on them. We build entire lives on top of them. But they are not the ground. They are the table. And underneath, the machinery is something else entirely.
 
@@ -45,7 +45,7 @@ Huang Chao, a figure from this period, still gets argued about today. He was a s
 
 The same human machinery that produced the poetry also produced the cannibalism. The same man who wrote lyrical verses about golden armor presided over mass slaughter. There was no switch that flipped. No transformation from good to evil. The machinery was always the same. It just expressed differently depending on the conditions.
 
-**And the people?**
+#### And the people?
 
 Not the emperors or the rebels. The actual people. They did what we are all doing right now. They farmed. They traded what they could. They protected their families. They tried to eat. They tried to not die. In the worst moments and in the best, this is the constant. The systems above keep changing shape. The animal underneath has been the same for as long as we've been human.
 
@@ -59,7 +59,7 @@ We forget because the construction is warm. It gives us certainty, identity, a p
 
 Of all the things we constructed, there is one that we protect more fiercely than any other. More than money. More than nations. More than God ... for some of us. We constructed it so thoroughly, decorated it so beautifully, that suggesting it is a construction at all feels like a violation.
 
-**Love.**
+#### Love
 
 Not love as a biological impulse. That part is easy to accept. Of course there is a drive to protect offspring, to bond, to form alliances. Nobody argues with that. The part that is harder to sit with is this: the thing we experience as love, the whole feeling of it, is not separate from that biological machinery. It is the macro expression of it. The table again. Real to the touch. But not what we think it is underneath.
 
@@ -67,7 +67,7 @@ We feel love as something elevated. Something beyond the animal. A mother stayin
 
 There is a thought I have carried for a long time. All love is self-fulfilling. Every act of love, including the ones that look the most selfless, serves a biological need in the giver. The mother who sacrifices everything for her child is also fulfilling something in herself. A need to protect what is hers. A need to be essential to someone. A need to extend her existence beyond her own body. This is not a criticism. It is how the machinery works. The biological drive to protect offspring is strong enough on its own. It doesn't need decoration. But we decorated it anyway. We built entire moral systems, legal frameworks, social expectations, all reinforcing the idea that this particular expression of biology is sacred.
 
-**And then the proof shows up in the places we don't want to look.**
+#### And then the proof shows up in the places we don't want to look
 
 If love were truly selfless, there would be no conflict between loved ones. Think about that for a moment. If a mother's love were purely about the child's wellbeing, there would be no resentment when the child makes choices the mother disagrees with. If a partner's love were purely about the other person's happiness, there would be no jealousy, no possessiveness, no hurt when the attention goes elsewhere. But these conflicts are not exceptions. They are the norm. And they only make sense if both sides are fulfilling their own needs through the relationship.
 
@@ -80,7 +80,7 @@ The conflicts are not a failure of love. They are evidence of what love actually
 
 </br>
 
-**In Chinese culture, the intergenerational contract is enormous and deeply embedded.**
+#### In Chinese culture, the intergenerational contract is enormous and deeply embedded
 
 I grew up inside the Chinese family system, so this is not abstract to me.
 
@@ -96,7 +96,7 @@ From the child side: "I never asked for any of this." "You didn't do it for me, 
 
 This is not the language of selfless love. On either side. This is the language of a breached contract. The decoration tears, and what shows through is the machinery: two parties, each fulfilling their needs through the other, discovering that the needs no longer align.
 
-**And this pattern is not unique to Chinese culture.**
+#### And this pattern is not unique to Chinese culture
 
 Every culture has its version. The typical American family has its own contracts, its own unspoken expectations, its own quiet resentments when the deal breaks down. The decoration looks different. The machinery underneath is identical.
 
@@ -113,15 +113,15 @@ What makes love remarkable is not that it transcends biology. It doesn't. What m
 
 ## From Earth
 
-**After sitting with all of this, a question stays.**
+#### After sitting with all of this, a question stays
 
 We built civilization. We built moral codes and legal systems and social expectations. We built nations and currencies and technologies. We built love, or at least the version of it we recognize: decorated, contractual, beautiful and fragile.
 
-**After everything we built, what's actually ours?**
+#### After everything we built, what's actually ours
 
 There is one thing that was never constructed. Never decorated. Never taught, legislated, or moralized into existence. Something so fundamental that it doesn't need a contract, doesn't need reciprocity, doesn't need anyone else at all.
 
-**The instinct to take care of yourself.**
+#### The instinct to take care of yourself
 
 Not the self-care that gets sold back to us as another product. Not "treat yourself" or "you deserve this." Something much more basic than that. The body feeding itself when it is hungry. The mind pulling away from what hurts it. The impulse to keep going, even when the construction is collapsing and the decoration is in pieces. Before anyone taught us what love is supposed to look like, before the contracts and the expectations and the guilt, there was just this. A living thing, taking care of itself, because that is what living things do.
 

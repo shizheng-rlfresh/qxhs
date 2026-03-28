@@ -11,7 +11,7 @@ I have spent 12 years building ML/optimization systems in both enterprise and st
 I am currently on sabbatical, spending my time thinking, writing, building, and enjoying life.
 
 <p align="center">
-  <img src="/assets/pics/space.jpg" alt="space-walker" width="500">
+  <img src="/assets/pics/space.jpg" alt="space-walker" width="400">
 </p>
 
 ## Background

@@ -61,9 +61,14 @@ const formattedDate = date.toLocaleDateString('en-UK', {
   .post-meta {
     display: flex;
     justify-content: space-between;
+    gap: 0.75rem;
     margin-bottom: 1rem;
     font-size: var(--step--1);
     color: var(--color-text-muted);
+  }
+
+  .post-meta time {
+    flex-shrink: 0;
   }
 
   .category {
@@ -127,5 +132,11 @@ const formattedDate = date.toLocaleDateString('en-UK', {
 
   .read-more:hover::after {
     transform: translateX(4px);
+  }
+
+  @media (max-width: 640px) {
+    .post-card-content {
+      padding: 1.25rem;
+    }
   }
 </style>

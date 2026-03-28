@@ -4,7 +4,9 @@ title: "About"
 description: "About Me"
 ---
 
-![space](/assets/pics/space.jpg)
+<p align="center">
+  <img src="/assets/pics/space.jpg" alt="space-walker" width="500">
+</p>
 
 I am Zheng Shi. Computer scientist and machine learning engineer.
 

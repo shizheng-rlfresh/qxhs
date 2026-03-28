@@ -13,6 +13,7 @@ export const CONFIG = {
   author: "Zheng Shi",
   industry_title: "1/2 Engineer",
   academia_title: "1/2 Scientist",
+  current_status: "Gone Loafing",
   address: "Breinigsville, PA",
   email: "shi.zheng.qxhs@gmail.com",
   description: "Welcome to my blog!",

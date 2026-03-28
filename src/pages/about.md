@@ -24,10 +24,10 @@ I am currently on sabbatical, spending my time thinking, writing, building, and 
 ## Experience
 
 - 2025 ~ present: Sabbatical
-- 2024 - 2025: Staff Engineer, Machine Learning — Oden Technologies
-- 2021 - 2024: Team Lead, Machine Learning — IBM
-- 2016 - 2022: Research Assistant — Lehigh University
-- 2013 - 2021: Staff / Advisory / Senior / Tech Lead, Data Science — IBM
+- 2024 ~ 2025: Staff Engineer, Machine Learning — Oden Technologies
+- 2021 ~ 2024: Team Lead, Machine Learning — IBM
+- 2016 ~ 2022: Research Assistant — Lehigh University
+- 2013 ~ 2021: Staff / Advisory / Senior / Tech Lead, Data Science — IBM
 
 ## Work With Me
 

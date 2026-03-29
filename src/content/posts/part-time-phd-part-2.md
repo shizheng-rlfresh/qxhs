@@ -10,11 +10,6 @@ author: "Zheng Shi"
 
 <span style="color:gray; font-style:italic;">My expectation was that, after the doctoral study, I would be a person KNOWING A LOT! But, more of being an intellectual who <u>knows what he doesn't know and how to study the UNKNOWN.</u> </span>
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExaDludzI4Z3ZpeG51ZnVobndhdXFpZG5wOXk0N213c2I2eTc2cWpwMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26ufdipQqU2lhNA4g/giphy.gif" alt="Knowledge paradox - Shows a graph of 'What you know' vs 'What you think you know' over time, with PhD causing a massive drop" />
-</p>
-
-
 It turned out … I had a nearly impossible goal. No one would be able to tell exactly how to study the UNKNOWN without knowing it already. The more I studied, the more I thought I barely knew anything. The vastness of uncovered truths, principles and knowledge was far more profound than I could've ever imagined.
 
 <div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
@@ -25,11 +20,6 @@ It turned out … I had a nearly impossible goal. No one would be able to tell e
 <br>
 
 Personally, starting a program in early 30s, though not being too old, may have triggered a few mental crises.
-
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3AxdHB5M3g1eGkwMnh5bm52ajY3ZGdvOTYzdHEwZTdkNzhoZmJsYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/9o9dh1JRGThC1qxGTJ/giphy.gif" alt="PhD Crisis - Someone pulling their hair out at a desk covered with papers and a laptop" />
-</p>
-
 
 In particular, the first few semesters were the most challenging. Being an industry professional for a few years, I didn't really think of myself of anything other than an SME (subject matter expert).
 
@@ -43,10 +33,6 @@ If I were to try to contribute something novel, the most logical place I could s
     <span style="margin-right: 10px;">🤔</span> 
     <span>It is not a laughing matter to think about meaningfulness, especially you are spending your weekends, nights, PTO hours into this. It is quite common for fresh PhDs to get a feeling of "Now what?!", after having finished their degree. The search of a challenging problem or task that matches your skill set can be more challenging than you'd thought.</span> 
 </div>
-
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbzFvcjFtNDR4bno2YXN5MmY5bjV2NGI0OGk3MWQ3ZTAzcTZrZWJ5MCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/QMHoU66sBXqqLqYvGO/giphy.gif" alt="PhD Completion - Dog sitting in burning house saying 'This is fine'" />
-</p>
 
 <br>
 

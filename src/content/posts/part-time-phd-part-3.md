@@ -10,11 +10,6 @@ author: "Zheng Shi"
 
 This part of my writing is the memory lane of me getting into the PhD program. It was a glorious feeling. I remember having a period of intense anxiety about the PhD application, and then finally be admitted into a PhD program. That was in the end of 2016.
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExenU3aGhsbGVlMm5wcjQ1MzJpYmYyeWp0aDQ2cG94dmtxOG9nY3czcSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5GoVLqeAOo6PK/giphy.gif" alt="Acceptance email reaction - Person jumping with excitement" />
-</p>
-
-
 It was a strange PhD, an industrial PhD. You'd never hear it often because, part-time or not, I found it hard to argue for the necessity of a PhD.
 
 <div style="width: 100%; border: 1px solid gray; padding: 10px; display: flex; align-items: left;"> 
@@ -26,11 +21,6 @@ It was a strange PhD, an industrial PhD. You'd never hear it often because, part
 I was a bit afraid to be a student again, after a few years of industry experience. When I was accepted, I realized that I would need to adhere to the normal standards of a PhD student in terms of quality of work, creativity, and independence.
 
 I was a true PhD student, not a special breed, even if I was a part-time student rather than a full-time one. No special treatment was necessary or desired.
-
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExMzRtYmZybjQ1MXh5cnJ6d2ZvNnl5aHN3ZWZ0ZTB0NDJhems3ejNxMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l3q2K5jinAlChoCLS/giphy.gif" alt="PhD student reality - Person drowning in books and papers" />
-</p>
-
 
 Ideally, I would want to behave and perform like just a normal PhD student. I had read that the PhD student was an apprentice of the academics, someone who is learning to be a researcher rather someone simply learning knowledge. So, I didn't want any special treatment, since treating me differently would train me to be a "special" researcher. 
 
@@ -44,11 +34,6 @@ Ideally, I would want to behave and perform like just a normal PhD student. I ha
 With that in mind, I was a bit anxious of the "free-pass" PhD, where they would say "as long as you pay the tuition, we will give you a PhD".
 
 I am almost sure such things do not exist, especially for a reputable school. I can't imagine the amount of shame I'd feel if there is a way for someone to pay for a PhD. It is way more than a transactional matter, it is about the intrinsic pursuit of one's intellectual curiosity.
-
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExenZjNmtvMTlkbHN2dDV6Z2Frd2JuanZqZjVpbnN2cW5qZjJyem95eCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/67ThRZlYBvibtdF9JH/giphy.gif" alt="Paying for PhD - Cash being exchanged for diploma with worried face" />
-</p>
-
 
 The first few classes were so confusing, everyone was saying words I hadn't heard for 3+ years. I had to go back to textbooks, many of which I've already sold during my master programs, to refresh myself with all the formal terminologies. I had been working in industry, where simple terminology with 80% accuracy works better than the most precise terminologies.
 

@@ -35,10 +35,6 @@ Before I dive into my personal journey of being a full-time professional and par
 
 You better pause and think about this question for a moment now, as it is going to haunt you for quite a while.
 
-<p align="center">
-  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXk4ZDI3eTZkcXZ2cXkzaHhqYTZobXlkOTFiOWxicGZkZGN5YjZycCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7btZ1Gm7ZL25pLMs/giphy.gif" alt="PhD Motivation - Someone looking confused with caption 'Me trying to remember why I started this PhD'" />
-</p>
-
 Let me reiterate: it is very important to know why! It helps you stay motivated through the journey, more so as a part-timer.
 
 For part-timers, you probably have already had somewhat of a career, somewhere between being an early professional and having a decade of experience. To me, if you have had a steady state of income, you have a completely different risk profile than full-time students. Even if you'd switch back to being a student after years of working, your feeling about doing a PhD would be very different from those who go directly to PhD right after undergrad or master's.

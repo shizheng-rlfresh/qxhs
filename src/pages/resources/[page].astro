@@ -9,7 +9,6 @@ import Pagination from '@components/Pagination.astro';
 
 export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const allArticles = await getCollection('articles');
-  const allShareables = await getCollection('shareables');
   
   const articles = allArticles
     .filter(article => article.data.public)

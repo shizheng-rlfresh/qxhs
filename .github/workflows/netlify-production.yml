@@ -1,0 +1,126 @@
+name: Netlify Production Deploy
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+    inputs:
+      commit_sha:
+        description: Commit SHA to verify; defaults to the workflow SHA.
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  verify-production-deploy:
+    name: Verify production deploy
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      TARGET_SHA: ${{ github.event.inputs.commit_sha || github.sha }}
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
+      - name: Wait for Netlify production deploy
+        run: |
+          set -euo pipefail
+
+          if [ -z "${NETLIFY_AUTH_TOKEN:-}" ] || [ -z "${NETLIFY_SITE_ID:-}" ]; then
+            echo "NETLIFY_AUTH_TOKEN and NETLIFY_SITE_ID repository secrets are required." >&2
+            exit 1
+          fi
+
+          deadline=$((SECONDS + 900))
+
+          while [ "$SECONDS" -lt "$deadline" ]; do
+            match=""
+
+            for page in 1 2 3 4 5; do
+              response="$(curl -fsS \
+                -H "Authorization: Bearer ${NETLIFY_AUTH_TOKEN}" \
+                "https://api.netlify.com/api/v1/sites/${NETLIFY_SITE_ID}/deploys?page=${page}&per_page=100")"
+
+              page_result="$(DEPLOYS_JSON="$response" node -e '
+                const deploys = JSON.parse(process.env.DEPLOYS_JSON);
+                const target = process.env.TARGET_SHA;
+                const deploy = deploys.find((item) => {
+                  const isTargetCommit = item.commit_ref === target;
+                  const isProduction = item.context === "production" || item.branch === "master";
+                  return isTargetCommit && isProduction;
+                });
+
+                console.log(JSON.stringify({
+                  empty: deploys.length === 0,
+                  match: deploy ? {
+                    id: deploy.id,
+                    state: deploy.state,
+                    url: deploy.ssl_url || deploy.deploy_ssl_url || deploy.url,
+                    admin_url: deploy.admin_url,
+                    branch: deploy.branch,
+                    context: deploy.context,
+                    created_at: deploy.created_at
+                  } : null
+                }));
+              ')"
+
+              match="$(PAGE_RESULT="$page_result" node -e '
+                const result = JSON.parse(process.env.PAGE_RESULT);
+                if (result.match) console.log(JSON.stringify(result.match));
+              ')"
+
+              if [ -n "$match" ]; then
+                break
+              fi
+
+              is_empty="$(PAGE_RESULT="$page_result" node -e '
+                const result = JSON.parse(process.env.PAGE_RESULT);
+                console.log(result.empty ? "true" : "false");
+              ')"
+
+              if [ "$is_empty" = "true" ]; then
+                break
+              fi
+            done
+
+            if [ -n "$match" ]; then
+              state="$(MATCH_JSON="$match" node -e 'const d = JSON.parse(process.env.MATCH_JSON); console.log(d.state)')"
+              url="$(MATCH_JSON="$match" node -e 'const d = JSON.parse(process.env.MATCH_JSON); console.log(d.url || "")')"
+              admin_url="$(MATCH_JSON="$match" node -e 'const d = JSON.parse(process.env.MATCH_JSON); console.log(d.admin_url || "")')"
+
+              if [ "$state" = "ready" ]; then
+                {
+                  echo "### Netlify production deploy is live"
+                  echo ""
+                  echo "- Commit: \`${TARGET_SHA}\`"
+                  echo "- State: \`${state}\`"
+                  echo "- URL: ${url}"
+                  echo "- Netlify deploy: ${admin_url}"
+                } >> "$GITHUB_STEP_SUMMARY"
+                exit 0
+              fi
+
+              case "$state" in
+                error|failed|canceled|cancelled|skipped|rejected)
+                  echo "Netlify deploy for ${TARGET_SHA} ended with state: ${state}" >&2
+                  echo "$match" >&2
+                  exit 1
+                  ;;
+              esac
+            fi
+
+            sleep 15
+          done
+
+          echo "Timed out waiting for Netlify production deploy for ${TARGET_SHA}." >&2
+          exit 1

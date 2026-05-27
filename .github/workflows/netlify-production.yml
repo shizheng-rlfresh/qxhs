@@ -18,12 +18,20 @@ jobs:
   verify-production-deploy:
     name: Verify production deploy
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 20
     env:
       NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
       NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
       TARGET_SHA: ${{ github.event.inputs.commit_sha || github.sha }}
     steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version-file: .nvmrc
+
       - name: Wait for Netlify production deploy
         run: |
           set -euo pipefail
@@ -36,31 +44,54 @@ jobs:
           deadline=$((SECONDS + 900))
 
           while [ "$SECONDS" -lt "$deadline" ]; do
-            response="$(curl -fsS \
-              -H "Authorization: Bearer ${NETLIFY_AUTH_TOKEN}" \
-              "https://api.netlify.com/api/v1/sites/${NETLIFY_SITE_ID}/deploys?per_page=20")"
+            match=""
 
-            match="$(DEPLOYS_JSON="$response" node -e '
-              const deploys = JSON.parse(process.env.DEPLOYS_JSON);
-              const target = process.env.TARGET_SHA;
-              const deploy = deploys.find((item) => {
-                const isTargetCommit = item.commit_ref === target;
-                const isProduction = item.context === "production" || item.branch === "master";
-                return isTargetCommit && isProduction;
-              });
+            for page in 1 2 3 4 5; do
+              response="$(curl -fsS \
+                -H "Authorization: Bearer ${NETLIFY_AUTH_TOKEN}" \
+                "https://api.netlify.com/api/v1/sites/${NETLIFY_SITE_ID}/deploys?page=${page}&per_page=100")"
 
-              if (deploy) {
+              page_result="$(DEPLOYS_JSON="$response" node -e '
+                const deploys = JSON.parse(process.env.DEPLOYS_JSON);
+                const target = process.env.TARGET_SHA;
+                const deploy = deploys.find((item) => {
+                  const isTargetCommit = item.commit_ref === target;
+                  const isProduction = item.context === "production" || item.branch === "master";
+                  return isTargetCommit && isProduction;
+                });
+
                 console.log(JSON.stringify({
-                  id: deploy.id,
-                  state: deploy.state,
-                  url: deploy.ssl_url || deploy.deploy_ssl_url || deploy.url,
-                  admin_url: deploy.admin_url,
-                  branch: deploy.branch,
-                  context: deploy.context,
-                  created_at: deploy.created_at
+                  empty: deploys.length === 0,
+                  match: deploy ? {
+                    id: deploy.id,
+                    state: deploy.state,
+                    url: deploy.ssl_url || deploy.deploy_ssl_url || deploy.url,
+                    admin_url: deploy.admin_url,
+                    branch: deploy.branch,
+                    context: deploy.context,
+                    created_at: deploy.created_at
+                  } : null
                 }));
-              }
-            ')"
+              ')"
+
+              match="$(PAGE_RESULT="$page_result" node -e '
+                const result = JSON.parse(process.env.PAGE_RESULT);
+                if (result.match) console.log(JSON.stringify(result.match));
+              ')"
+
+              if [ -n "$match" ]; then
+                break
+              fi
+
+              is_empty="$(PAGE_RESULT="$page_result" node -e '
+                const result = JSON.parse(process.env.PAGE_RESULT);
+                console.log(result.empty ? "true" : "false");
+              ')"
+
+              if [ "$is_empty" = "true" ]; then
+                break
+              fi
+            done
 
             if [ -n "$match" ]; then
               state="$(MATCH_JSON="$match" node -e 'const d = JSON.parse(process.env.MATCH_JSON); console.log(d.state)')"
